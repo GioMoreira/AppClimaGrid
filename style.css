@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;300&display=swap');
+
+body, input, button, select, textarea{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1{
+    font-size: 80px;
+    margin: 0;
+    font-weight: 300;
+}
+
+h4{
+    font-weight: 300;
+}
+
+h2,h4{
+    margin: 5px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --dark-blue: #1d1d1d;
+    --light-grey: #bfbfc1;
+}
+
+.phone-container{
+    width: 350px ;
+    height: 700px;
+    background: var(--dark-blue);
+    border-radius: 45px;
+    border: 20px solid #111;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding: 60px 10px 20px;
+}
+
+.phone-container .notch{
+    width: 180px;
+    height: 25px;
+    background: #111;
+    border-radius: 0 0 30px 30px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 90px);
+}
+
+.phone-container .phone-menu{
+    width: 90px;
+    background: var(--light-grey);
+    height: 3px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 45px);
+}
+
+.phone-container svg{
+    width: 100px;
+    height: 100px;
+    margin: 40px 0 10px;
+}
+
+.phone-container .week-weather{
+    color: var(--light-grey);
+    margin-top: 60px;
+    padding: 0 20px;
+    display: grid;
+    text-align: left;
+    grid-template-columns: 3fr 1fr; 
+    grid-gap: 1rem;
+}
